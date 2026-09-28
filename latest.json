@@ -1,16 +1,30 @@
 {
-    "version": "6.1.9",
-    "releaseDate": "2026-08-06T20:21:20.733Z",
-    "updateType": "patch",
-    "baseVersion": "6.1.8",
-    "baseDownloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.1.8/Chatak-Setup-6.1.8.exe",
-    "downloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.1.8/Chatak-Setup-6.1.8.exe",
-    "sha256": "6d5c072fa80408cdbc801fbaaa8cb22aae2dc9d8f6458ebe72a37d18629a65f4",
-    "fileSize": "694634276",
-    "patchUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.1.9/Chatak-Patch-6.1.9.zip",
-    "patchSha256": "30c0942cebab713c2b1e022736110243a16a2f36adb3c1b3a5365f738fe42829",
-    "patchFileSize": "22420401",
-    "changelog": "## What's New in v6.17\n\n### Fixes\n- Hardened patch update installation on Windows systems where System32 tools are missing from PATH\n- Uses absolute Windows tool paths for patch extraction, backup, apply, and restart steps\n- Improves update error labels so check/download/install failures are separated in Settings",
+    "version": "6.2.0",
+    "releaseDate": "2026-09-28T10:56:11Z",
+    "updateType": "full",
+    "baseVersion": "6.2.0",
+    "baseDownloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.0/Chatak-Setup-6.2.0.exe",
+    "downloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.0/Chatak-Setup-6.2.0.exe",
+    "sha256": "c0cb14eba6dc8a7a7dac13d3669fc300667c3cd1a340dd137df19ee15579c19d",
+    "fileSize": "455353991",
+    "patchUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.0/Chatak-Patch-6.2.0.zip",
+    "patchSha256": "7acf686a6286dc6a1fbb1445e152b4b61efcf0e5eb3c3693f6a5efab20b6b677",
+    "patchFileSize": "22423706",
+    "changelog": "## What's New in v6.2.0\n\n### Fixes\n- Hardened patch update installation on Windows systems where System32 tools are missing from PATH\n- Uses absolute Windows tool paths for patch extraction, backup, apply, and restart steps\n- Improves update error labels so check/download/install failures are separated in Settings",
     "mandatory": false,
-    "minVersion": "1.0.0"
+    "minVersion": "1.0.0",
+    "schemaMigrations": [
+        "0001_global_species_site.sql",
+        "0002_event_embeddings.sql",
+        "0003_repair_orphaned_recording_clusters.sql"
+    ],
+    "previousVersions": [
+        {
+            "version": "6.1.8",
+            "updateType": "full",
+            "downloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.1.8/Chatak-Setup-6.1.8.exe",
+            "sha256": "6d5c072fa80408cdbc801fbaaa8cb22aae2dc9d8f6458ebe72a37d18629a65f4",
+            "fileSize": "694634276"
+        }
+    ]
 }
