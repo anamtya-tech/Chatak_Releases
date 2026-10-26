@@ -1,16 +1,16 @@
 {
-    "version": "6.2.6",
-    "releaseDate": "2026-10-23T20:12:12.573Z",
-    "updateType": "patch",
-    "baseVersion": "6.2.5",
-    "baseDownloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.5/Chatak-Setup-6.2.5.exe",
-    "downloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.5/Chatak-Setup-6.2.5.exe",
-    "sha256": "dd9dd8e1fcd5333082d8c86e76b21d5aa55d95147ca7c078c446e933b8c77b7e",
-    "fileSize": "407874456",
-    "patchUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.6/Chatak-Patch-6.2.6.zip",
+    "version": "6.2.7",
+    "releaseDate": "2026-10-26T12:20:17Z",
+    "updateType": "full",
+    "baseVersion": "6.2.7",
+    "baseDownloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.7/Chatak-Setup-6.2.7.exe",
+    "downloadUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.7/Chatak-Setup-6.2.7.exe",
+    "sha256": "60addea3d93dc485ad4dcf5ea124c4d661b9c1d68fbac814d356a11a4f48b1ed",
+    "fileSize": "422425005",
+    "patchUrl": "https://github.com/anamtya-tech/chatak-releases/releases/download/v6.2.7/Chatak-Patch-6.2.7.zip",
     "patchSha256": "81370f6f2600b7bec00a31e2b204ea7de639d3376c3c0c838765da8b2a1cd197",
     "patchFileSize": "23532977",
-    "changelog": "## What's New in v6.2.6\n\n### New\n- Merge short recordings: a new tab in Audio Segmentation joins short recordings into one per hour or per day, grouped by the timestamps in their filenames. Pick any recordings by hand, across sites and formats.\n- After an upload or import, Chatak offers to merge short recordings or split long ones.\n- Dictionary: upload your own recording of a species, pick or draw the call, and it becomes a template in Pattern Matching's template library.\n- Bulk label a whole cluster in annotation, leaving out the odd ones first. One undo reverses the whole batch.\n- Merge review: choose any two clusters as A and B to compare them side by side.\n\n### Improved\n- Pattern Matching redesigned: a step-by-step setup column, a large detection picker, your template shown beside the results, species suggestions from the local BirdNET and Perch, and labelling that works in the desktop app.\n- Correlate matching now finds repeats of a call reliably. Its strictness levels were recalibrated (Balanced is now 0.60).\n- Event thumbnails everywhere show duration and frequency range, e.g. \"2.1 s · 1.9–3.3 kHz\".\n- Recording cards show the file format. The Upload and Import tabs are labelled Cloud and Local.\n\n### Fixed\n- Splitting a recording failed on every file.\n- Merge and split could report \"failed\" after they had succeeded.\n- Installs stuck in cloud mode with no online database could not load projects.\n- The startup screen could wait 30 seconds after Chatak was already ready.\n- Scrolling over the annotation spectrogram also scrolled the page.\n- Templates made in the Dictionary never reached Pattern Matching.\n- Naming a cluster and entering map coordinates did nothing in the desktop app.",
+    "changelog": "## What's New in v6.2.7\n\n### New\n- Merge short recordings: a new tab in Audio Segmentation joins short recordings into one per hour or per day, grouped by the timestamps in their filenames. Pick any recordings by hand, across sites and formats.\n- After an upload or import, Chatak offers to merge short recordings or split long ones.\n- Dictionary: upload your own recording of a species, pick or draw the call, and it becomes a template in Pattern Matching's template library.\n- Bulk label a whole cluster in annotation, leaving out the odd ones first. One undo reverses the whole batch.\n- Merge review: choose any two clusters as A and B to compare them side by side.\n\n### Improved\n- Pattern Matching redesigned: a step-by-step setup column, a large detection picker, your template shown beside the results, species suggestions from the local BirdNET and Perch, and labelling that works in the desktop app.\n- Correlate matching now finds repeats of a call reliably. Its strictness levels were recalibrated (Balanced is now 0.60).\n- Event thumbnails everywhere show duration and frequency range, e.g. \"2.1 s · 1.9–3.3 kHz\".\n- Recording cards show the file format. The Upload and Import tabs are labelled Cloud and Local.\n\n### Fixed\n- Splitting a recording failed on every file.\n- Merge and split could report \"failed\" after they had succeeded.\n- Installs stuck in cloud mode with no online database could not load projects.\n- The startup screen could wait 30 seconds after Chatak was already ready.\n- Scrolling over the annotation spectrogram also scrolled the page.\n- Templates made in the Dictionary never reached Pattern Matching.\n- Naming a cluster and entering map coordinates did nothing in the desktop app.",
     "mandatory": false,
     "minVersion": "1.0.0",
     "schemaMigrations": [
@@ -18,7 +18,8 @@
         "0002_event_embeddings.sql",
         "0003_repair_orphaned_recording_clusters.sql",
         "0004_global_species_member_subgroup.sql",
-        "0005_ai_mode_sessions.sql"
+        "0005_ai_mode_sessions.sql",
+        "0006_event_model_predictions.sql"
     ],
     "previousVersions": [
         {
